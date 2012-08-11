@@ -34,7 +34,7 @@
   </head>
 
   <body>
-
+  	  <a href="https://github.com/rantoine/Sandbox/tree/PhpAjaxCall" target="_blank"><img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" style="position: absolute; top: 40px; right: 0px; border: 0;"></a>	
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -43,14 +43,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Ajax Php Demo</a>
+          <a class="brand" href="./">Ajax Php Demo</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
+              <li class="active"><a href="./">Home</a></li>
               <li><a href="tutorial.php">Tutorial</a></li>
               <li><a href="ajaxDemo1.php">Ajax Form 1</a></li>
               <li><a href="ajaxDemo2.php">Ajax Form 2</a></li>
               <li><a href="modalDemo.php">Modal Demo</a></li>
+			  <li><a href="http://glennantoine.com/2012/08/11/phpajax-call-php-function/">Main Site - Tutorial</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -68,7 +69,7 @@
               <li><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a></li>
               <li><a href="http://api.jquery.com/serialize/" target="_blank">jQuery.serialize()</a></li>
               <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></li>
-              <li><a href="https://github.com/rantoine/Sandbox/tree/PhpAjaxCall" target="_blank">Github Repo</a></li>
+			  <li><a href="https://github.com/rantoine/Sandbox/tree/PhpAjaxCall" target="_blank">Github Repo</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -77,7 +78,7 @@
             <h1>Ajax w/ PHP Demo</h1>
             <p>On the next couple of pages there are a series of forms that can be submitted to a single PHP file that contains
             specific functions for the handling of each form. </p>
-            <p><a href="ajaxDemo1.php" class="btn btn-primary btn-large">Checkout the 1st Demo Now &raquo;</a></p>
+            <p><a href="tutorial.php" class="btn btn-primary btn-large">Checkout the Tutorial Now &raquo;</a></p>
           </div>
           <div class="row-fluid">
             <div>

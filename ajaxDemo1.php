@@ -34,6 +34,7 @@
   </head>
 
   <body>
+  	  <a href="https://github.com/rantoine/Sandbox/tree/PhpAjaxCall" target="_blank"><img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" style="position: absolute; top: 40px; right: 0px; border: 0;"></a>	
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -43,14 +44,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Ajax Php Demo</a>
+          <a class="brand" href="./">Ajax Php Demo</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="/">Home</a></li>
+              <li><a href="./">Home</a></li>
               <li><a href="tutorial.php">Tutorial</a></li>
               <li class="active"><a href="ajaxDemo1.php">Ajax Form 1</a></li>
               <li><a href="ajaxDemo2.php">Ajax Form 2</a></li>
               <li><a href="modalDemo.php">Modal Demo</a></li>
+			  <li><a href="http://glennantoine.com/2012/08/11/phpajax-call-php-function/">Main Site - Tutorial</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
