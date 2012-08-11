@@ -137,15 +137,108 @@
 			Here's a sample of the core code required to understand how an Ajax script can get data from a form, 
 			send it to a specific function in your php script and finally display the response received:
 			</p>
-  			
 			
         </div><!--/span-->  
             
         <!-- Right Column -->
         <div class="span6 well">
         	<h2>Additional Details</h2>
+        	
+        	<p>
+        	Github: Download all the code for this tutorial 
+        	<a href="https://github.com/rantoine/Sandbox/tree/PhpAjaxCall" target="_blank">here!</a>
+        	</p>
+        	
+        	<p>Got some additional ideas on Ajax Calls, Php and form processing? Fork this Github Repository and 
+        	provide an update.
+        	</p>
+        	
+Php server side code required for the form processing of data posted via ajax:			
+<div>
+<pre>
+//Form One Processing
+function formOne(){
+	$output = 'Output from Form One:<br />';
+	foreach ($_POST as $key => $value) {
+		$output .= $key . ': ' . $value . '<br />';
+	}
+	echo $output;
+}
 
-      
+//Form Two Processing
+function formTwo(){
+	$output = 'Output from Form Two:<br />';
+	foreach ($_POST as $key => $value) {
+		$output .= $key . ': ' . $value . '<br />';
+	}
+	echo $output;
+}
+
+//Stub function for processing Modal Form
+function modalForm(){
+	return null;
+}
+
+//Check the Post variable to verify which form should be processed.
+if(in_array($_POST['function'], array('formOne','formTwo'))){
+	//Call the appropriate function associated
+	//with the form post
+	$_POST['function']();
+}else{
+	echo '<strong>ERROR: The Form Post was not captured!</strong>';
+}
+</pre>
+</div>
+
+Below you will see the Javascript/jQuery required to make this demo work:
+<div>
+<pre>
+
+(function () {
+
+    var formOne = function () {
+    	var formData = $("#formOne").serialize();
+    	
+    	$.ajax({ url: '/ajax.php',
+            data: formData,
+            type: 'post',
+            complete: function(output) {
+                         $('#formOneResults').html(output.responseText);
+                     }
+    	});	  	
+    };
+
+    var formTwo = function () {
+    	var formData = $("#formTwo").serialize();
+    	
+    	$.ajax({ url: '/ajax.php',
+            data: formData,
+            type: 'post',
+            complete: function(output) {
+                         $('#formTwoResults').html(output.responseText);
+                     }
+    	});	    	
+    };
+
+    $(document).ready(function () {
+    	$("#formOneBtn").on("click", function(e){
+    		e.preventDefault();
+    		formOne();
+    	});    	
+    	
+    	$("#formTwoBtn").on("click", function(e){
+    		e.preventDefault();
+    		formTwo();
+    	});
+
+    });
+
+} ()); 
+</pre>
+</div>
+        	
+        	
+        	
         </div><!--/span-->
        </div>		  
 		  
