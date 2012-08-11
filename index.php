@@ -76,7 +76,7 @@
             <h1>Ajax w/ PHP Demo</h1>
             <p>On the next couple of pages there are a series of forms that can be submitted to a single PHP file that contains
             specific functions for the handling of each form. </p>
-            <p><a href="ajaxDemo1.html" class="btn btn-primary btn-large">Checkout the 1st Demo Now &raquo;</a></p>
+            <p><a href="ajaxDemo1.php" class="btn btn-primary btn-large">Checkout the 1st Demo Now &raquo;</a></p>
           </div>
           <div class="row-fluid">
             <div>
