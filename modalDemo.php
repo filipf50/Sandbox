@@ -124,10 +124,10 @@
             </div>
             <div class="modal-footer">
               <a class="btn" data-dismiss="modal" >Close</a>
-              <a id="modalFormSaveBtn" class="btn btn-primary">Save changes</a>
+              <a id="modalFormSaveBtn" class="btn btn-success">Save changes</a>
             </div>
           </div>
-          <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch Modal Form</a>	
+          <a data-toggle="modal" href="#myModal" class="btn btn-success btn-large">Launch Modal Form</a>	
         </div><!--/span-->      
       
         <div class="span6 well">
@@ -155,7 +155,7 @@
         	
         	<p>If you are interested in viewing a Twitter Bootstrap Modal launch the Modal Form demo 
         	</p>
-        	<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch Modal Form</a>
+        	<a data-toggle="modal" href="#myModal" class="btn btn-success btn-large">Launch Modal Form</a>
         	
         	<hr>
           <h2>Using bootstrap-modal</h2>

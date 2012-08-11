@@ -78,7 +78,7 @@
             <h1>Ajax w/ PHP Demo</h1>
             <p>On the next couple of pages there are a series of forms that can be submitted to a single PHP file that contains
             specific functions for the handling of each form. </p>
-            <p><a href="tutorial.php" class="btn btn-primary btn-large">Checkout the Tutorial Now &raquo;</a></p>
+            <p><a href="tutorial.php" class="btn btn-success btn-large">Checkout the Tutorial Now &raquo;</a></p>
           </div>
           <div class="row-fluid">
             <div>
@@ -89,7 +89,7 @@
               routing (/controller/action/) handles ensuring the post gets to the correct method. If for whatever reason you 
               are not using a MVC Framework with controller/action routing there are some additional steps that you 
               will need to take.</p>
-              <p><a class="btn" href="tutorial.html">View Tutorial &raquo;</a></p>
+              <p><a class="btn" href="tutorial.php">View Tutorial &raquo;</a></p>
             </div><!--/span-->
           </div><!--/row-->
           <div class="row-fluid">
