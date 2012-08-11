@@ -52,7 +52,7 @@
               <li><a href="ajaxDemo1.php">Ajax Form 1</a></li>
               <li><a href="ajaxDemo2.php">Ajax Form 2</a></li>
               <li><a href="modalDemo.php">Modal Demo</a></li>
-			  <li><a href="http://glennantoine.com/2012/08/11/phpajax-call-php-function/">Main Site - Tutorial</a></li>>
+			  <li><a href="http://glennantoine.com/2012/08/11/phpajax-call-php-function/">Main Site - Tutorial</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
