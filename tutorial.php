@@ -135,9 +135,48 @@
 				<li>If posting from a Modal and success, you may want to close the modal and update the initiating page</li>
 			</ul>
 			
+			<p>There are a few key pieces of code that you will want to understand in order to replicate posting a form via an Ajax call to a specific function in your PHP script. In all reality this is a much easier than you may have expected. The first key point to note is that each form has a hidden field that identifies the form. The second is the conditional check in your PHP script that looks for this hidden field and then calls the appropriate form processing function.
+			</p>
+			
+			<p>The code required to identify the form is a very simple hidden form field:
+			<div>
+<pre>
+&lt;input type="hidden" name="function" value="formOne"&gt;
+</pre>
+			</div>
+			</p>
+			
+			<p>Here we have a simple hidden form field that is used to accomplish two things. First it identifies the form that has been posted via the Ajax call. Secondly the field value "formOne" is used to leverage PHP's variable function feature.
+			</p>
+			
 			<p>
-			Here's a sample of the core code required to understand how an Ajax script can get data from a form, 
-			send it to a specific function in your php script and finally display the response received:
+			On the server side I now want my PHP script to check that the request was a POST and that the POST array contains a from that I want to be handled by a specific PHP function. The code to handle that check follows:
+			<div>
+<pre>
+//Check the Post variable to verify which form should be processed.
+if(in_array($_POST['function'], array('formOne','formTwo'))){
+	//Call the appropriate function associated
+	//with the form post
+	$_POST['function']();
+}else{
+	echo '<strong>ERROR: The Form Post was not captured!</strong>';
+}
+</pre>
+			</div>
+			
+			<p>The above code segment looks in the POST array for one of two forms, formOne or formTwo. If the POST array contains either of these forms the code now uses the "function" form field to call the appropriate form processing method. PHP supports the concept of "Variable functions", which is what is being used here in this code segment. 
+			</p>
+			
+			<p>
+			From the PHP manual:
+			<em>PHP supports the concept of variable functions. This means that if a variable name has parentheses appended to it, PHP will look for a function with the same name as whatever the variable evaluates to, and will attempt to execute it. Among other things, this can be used to implement callbacks, function tables, and so forth.</em>
+			</p>
+			
+			<p>Here's a more complete sample of the core code required to understand how an Ajax script can get data from a form, send it to a specific function in your php script and finally display the response received. Php server side code required for the form processing of data posted via ajax:			
+			</p>
+			
+			<p>
+			In the right-hand column you will find a more complete sample of the core code required to understand how an Ajax script can get data from a form, send it to a specific function in your php script and finally display the response received:
 			</p>
 			
         </div><!--/span-->  
